@@ -25,6 +25,11 @@
 #include "mem.h"
 #include "thread.h"
 
+#ifdef O1RDP_BUILD
+#include "internal.h"
+#endif
+
+
 AVBufferRef *av_buffer_create(uint8_t *data, int size,
                               void (*free)(void *opaque, uint8_t *data),
                               void *opaque, int flags)

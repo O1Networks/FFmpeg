@@ -37,6 +37,10 @@
 #include "mem.h"
 #include "md5.h"
 
+#if O1RDP_BUILD
+#include "avconfig.h"
+#endif
+
 typedef struct AVMD5 {
     uint64_t len;
     uint8_t  block[64];

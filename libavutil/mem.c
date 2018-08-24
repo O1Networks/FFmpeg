@@ -43,6 +43,10 @@
 #include "intreadwrite.h"
 #include "mem.h"
 
+#if O1RDP_BUILD
+#include "internal.h"
+#endif
+
 #ifdef MALLOC_PREFIX
 
 #define malloc         AV_JOIN(MALLOC_PREFIX, malloc)

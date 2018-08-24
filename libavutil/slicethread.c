@@ -22,6 +22,11 @@
 #include "thread.h"
 #include "avassert.h"
 
+#ifdef O1RDP_BUILD
+#include "internal.h"
+#endif
+
+
 #if HAVE_PTHREADS || HAVE_W32THREADS || HAVE_OS2THREADS
 
 typedef struct WorkerContext {

@@ -26,6 +26,10 @@
 #include "mem.h"
 #include "samplefmt.h"
 
+#if O1RDP_BULD
+#include "internal.h"
+#endif
+
 #if FF_API_FRAME_GET_SET
 MAKE_ACCESSORS(AVFrame, frame, int64_t, best_effort_timestamp)
 MAKE_ACCESSORS(AVFrame, frame, int64_t, pkt_duration)
